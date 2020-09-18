@@ -1,4 +1,4 @@
-# IIIT-delhi-assignment
+# Ant colony optimization for finding shortest distance between two point covering max nodes
 Finding the shortest distance that will cover various points to reach one point from another
 Approach:
 The approach consists in grouping the points into clusters so that each cluster can be served as a route satisfying the constraints that exist. In fact, the problem is decomposed into two sub-problems. In the first instance, nodes of the graph (bus stops) are grouped and assigned to the buses (clustering phase). Then, each cluster is solved individually. During the assignment phase, clusters must satisfy buses capacity constraints, as well as fleet size. During the second phase, each pickup (or delivery) point cannot be visited more than once. The key target of this two-phase procedure is defining the clusters in such a way that the distance to be traveled by each bus between pickup (or delivery) points is the shorter as possible. Hence, the probabilistic nature of ACO method will very quickly find good routing. Following is the possible mathematical modeling:
